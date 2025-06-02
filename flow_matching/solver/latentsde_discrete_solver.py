@@ -27,7 +27,7 @@ except ImportError:
     TQDM_AVAILABLE = False
 
 
-class MixtureDiscreteEulerSolver(Solver):
+class MixtureLatentDiscreteEulerSolver(Solver):
     r"""Solver that simulates the CTMC process :math:`(X_t)_{t_{\text{init}}\leq t\leq t_{\text{final}}}` defined by :math:`p_t` the marginal probability path of ``path``.
     Given :math:`X_t \sim p_t`, the algorithm of solver step from :math:`t` to :math:`t+h` for the i-th coordinate is:
 
